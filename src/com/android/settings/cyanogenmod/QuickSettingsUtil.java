@@ -35,19 +35,21 @@ import static com.android.internal.util.cm.QSConstants.TILE_SLEEP;
 import static com.android.internal.util.cm.QSConstants.TILE_SYNC;
 import static com.android.internal.util.cm.QSConstants.TILE_TORCH;
 import static com.android.internal.util.cm.QSConstants.TILE_USER;
+import static com.android.internal.util.cm.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_DESKTOPMODE;
+import static com.android.internal.util.cm.QSConstants.TILE_HYBRID;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
 
 import android.content.Context;
 import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.android.settings.R;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
 
 public class QuickSettingsUtil {
 
@@ -102,6 +104,9 @@ public class QuickSettingsUtil {
         TILES.put(TILE_TORCH, new QuickSettingsUtil.TileInfo(
                 TILE_TORCH, R.string.title_tile_torch,
                 "com.android.systemui:drawable/ic_qs_torch_off"));
+        TILES.put(TILE_VOLUME, new QuickSettingsUtil.TileInfo(
+                TILE_VOLUME, R.string.title_tile_volume,
+                "com.android.systemui:drawable/ic_qs_volume"));
         TILES.put(TILE_WIFI, new QuickSettingsUtil.TileInfo(
                 TILE_WIFI, R.string.title_tile_wifi,
                 "com.android.systemui:drawable/ic_qs_wifi_4"));
@@ -113,7 +118,10 @@ public class QuickSettingsUtil {
                 "com.android.systemui:drawable/ic_qs_default_user"));
         TILES.put(TILE_DESKTOPMODE, new QuickSettingsUtil.TileInfo(
                 TILE_DESKTOPMODE, R.string.title_tile_desktop_mode,
-                "com.android.systemui:drawable/ic_qs_expanded_desktop"));
+                "com.android.systemui:drawable/ic_qs_expanded_desktop_off"));
+        TILES.put(TILE_HYBRID, new QuickSettingsUtil.TileInfo(
+                TILE_HYBRID, R.string.title_tile_hybrid,
+                "com.android.systemui:drawable/ic_qs_hybrid"));
     }
 
     public static String getCurrentTiles(Context context) {
