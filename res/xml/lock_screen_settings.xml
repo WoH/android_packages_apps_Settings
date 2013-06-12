@@ -31,9 +31,19 @@
         android:summary="@string/allow_rotate_summary" />
 
     <CheckBoxPreference
+        android:key="quick_unlock"
+        android:title="@string/allow_quick_unlock_title"
+        android:summary="@string/allow_quick_unlock_summary" />
+
+    <CheckBoxPreference
         android:key="see_through"
         android:title="@string/see_through_title"
         android:summary="@string/see_through_summary" />
+
+    <CheckBoxPreference
+        android:key="lockscreen_hide_hints"
+        android:title="@string/lockscreen_hide_hints_title"
+        android:summary="@string/lockscreen_hide_hints_summary" />
 
     <CheckBoxPreference
         android:key="home_screen_widgets"
