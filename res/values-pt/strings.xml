@@ -537,6 +537,7 @@
     <string name="android_beam_disabled_summary" msgid="1737782116894793393">"Indisponível porque o NFC está desativado"</string>
     <string name="android_beam_label" msgid="6257036050366775040">"Android Beam"</string>
     <string name="android_beam_explained" msgid="6981652347448777459">"Quando este recurso está ativado, você pode enviar o conteúdo do aplicativo para outro dispositivo compatível com NFC, mantendo os dispositivos próximos. Por exemplo, você pode enviar páginas do navegador, vídeos do YouTube, contatos de pessoas e muito mais.\n\nBasta posicionar os dispositivos próximos (normalmente de costas um para o outro) e tocar em sua tela. O aplicativo determina o que é enviado."</string>
+    <string name="nfc_polling_mode_title">Funcionamento do NFC</string>
     <string name="nfc_polling_mode_screen_off">Tela desligada</string>
     <string name="nfc_polling_mode_screen_locked">Tela ligada, travado</string>
     <string name="nfc_polling_mode_screen_unlocked">Tela ligada, destravado (padrão)</string>
